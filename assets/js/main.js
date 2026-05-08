@@ -243,7 +243,7 @@ Merci.`;
     // WHATSAPP
     if(method === "whatsapp") {
 
-        let phone = "212618845457"; // replace with your WhatsApp number
+        let phone = "212666848247"; // replace with your WhatsApp number
 
         let whatsappURL =
         `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
@@ -292,7 +292,7 @@ Message :
 ${message}`;
 
     // Replace with your WhatsApp number
-    let whatsappNumber = "212618845457";
+    let whatsappNumber = "212666848247";
 
     let whatsappURL =
     `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
