@@ -300,3 +300,23 @@ ${message}`;
     window.open(whatsappURL, "_blank");
 
 });
+
+
+// Coordinates
+        var lat = 32.533879;
+        var lng = -3.451960;
+
+        // Create map
+        var map = L.map('map').setView([lat, lng], 13);
+
+        // OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution:
+                '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Marker
+        L.marker([lat, lng])
+            .addTo(map)
+            .bindPopup("Maison d'hôtes AÏT OUARIBA")
+            .openPopup();
