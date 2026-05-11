@@ -230,6 +230,14 @@ document.getElementById("reservationForm")
     let type = document.getElementById("type").value;
     let method = document.getElementById("method").value;
 
+    if(checkin=='' || checkout=='' || type=='' || method=='')
+    {
+      alert("Réservation non valide");
+      return;
+    }
+
+
+
     let message =
 `Bonjour,
 Je souhaite réserver une chambre.
@@ -281,6 +289,12 @@ document.getElementById("contactWhatsappForm")
 
     let message =
     document.getElementById("contact_message").value;
+
+    if(message=='' || phone=='' || name=='')
+    {
+      alert("Entrées non valides");
+      return;
+    }
 
     let text =
 `Bonjour,
