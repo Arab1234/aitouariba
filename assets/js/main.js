@@ -262,7 +262,7 @@ Merci.`;
     // EMAIL
     else {
 
-        let email = "ayoub.mehach123@gmail.com"; // replace with your email
+        let email = "contact@ait-ouariba.com"; // replace with your email
 
         let subject = "Nouvelle réservation";
 
