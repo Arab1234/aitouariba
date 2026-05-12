@@ -167,6 +167,8 @@
   'todayHighlight': true
     });
 
+    $('#checkin_date, #checkout_date').datepicker('setDate', new Date());
+
     $.fn.datepicker.defaults.language = 'fr';
   };
 
@@ -334,3 +336,31 @@ ${message}`;
             .addTo(map)
             .bindPopup("Maison d'hôtes AÏT OUARIBA")
             .openPopup();
+
+              const carouselEl = document.querySelector('#platsCarousel');
+  const carousel = bootstrap.Carousel.getOrCreateInstance(carouselEl);
+
+  let isSliding = false;
+
+  // Lock when slide starts
+  carouselEl.addEventListener('slide.bs.carousel', () => {
+    isSliding = true;
+  });
+
+  // Unlock when slide ends
+  carouselEl.addEventListener('slid.bs.carousel', () => {
+    isSliding = false;
+  });
+
+  function safePrev() {
+    if (isSliding) return;
+    carousel.prev();
+  }
+
+  function safeNext() {
+    if (isSliding) return;
+    carousel.next();
+  }
+
+  document.querySelector('[data-bs-slide="prev"]').onclick = safePrev;
+  document.querySelector('[data-bs-slide="next"]').onclick = safeNext;

@@ -1286,7 +1286,7 @@ textarea.form-control {
 
 .home-slider .slider-item img {
     width: 100% !important;
-    height: 700px !important;
+    height: 600px !important;
     object-fit: cover;
     display: block;
 }
@@ -1315,4 +1315,35 @@ textarea.form-control {
     box-shadow:
         0 15px 40px rgba(0,0,0,0.45),
         0 0 25px rgba(0,0,0,0.2);
+}
+
+.prix{
+       color: #856404; 
+     font-weight: bold; 
+     background-color: #fff3cd; 
+     padding: 5px 10px; 
+     border-radius: 4px; 
+     display: inline-block; 
+     font-size: 0.9em; 
+     text-transform: uppercase;
+}
+
+.slider-item img {
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: contain !important;  /* affiche toute l’image */
+    background: #000000 !important;
+}
+
+.dish-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.rating i {
+  color: #f5c518;
+}
+
+#platslider .owl-dots{
+  bottom: 100px !important;
 }
